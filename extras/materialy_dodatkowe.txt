@@ -22,6 +22,7 @@ https://play.google.com/store/apps/details?id=pl.rajkonkret.testjava2&hl=pl&gl=U
 -    Subtraction    5 - 2 = 3
 +    Addition    2 + 2 = 4
 
+%s - łańcuch znaków (string)
 %d: formatowanie liczb całkowitych
 %f: formatowanie liczb zmiennoprzecinkowych
 %e lub %E: formatowanie liczb w notacji naukowej
