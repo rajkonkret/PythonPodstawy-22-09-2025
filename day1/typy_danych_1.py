@@ -50,4 +50,24 @@ print(sys.float_info)
 
 print(f"Sprawdzenie zmiennej {temp} {wiek}")  # Sprawdzenie zmiennej 36.6 47
 
+# typ logiczny
+# prawda, fałsz
+# True, False
+# 1, 0
 
+czy_znasz_pythona = True
+print(czy_znasz_pythona)
+print(type(czy_znasz_pythona))  # <class 'bool'>, boolean, typ logiczny
+
+print(int(True))  # 1
+print(int(False))  # 0
+
+# rzutowanie na typ logiczny
+print(bool(1))  # True
+print(bool(100))  # True
+print(bool(-100))  # True
+print(bool("Radek"))  # True
+
+print(bool(""))  # False
+print(bool(0))  # False
+print(bool(None))  # False, odpowiednik null, stan nieokreślony, nie wiem, nie ma
