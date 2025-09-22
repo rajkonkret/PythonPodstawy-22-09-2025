@@ -26,3 +26,9 @@ print(tekst.index("Ś"))  # 6
 
 print(tekst.count("i"))  # występuje 3 razy
 print(tekst.count("j", 0, 4))  # 0, z prawej zbiór otwarty, indeksy 0123
+
+print(tekst.removeprefix("Witaj"))  # " Świecie"
+print(tekst.removesuffix("Świecie"))  # "Witaj "
+
+# strip() - usunięcie białych znaków, spacji, na początku i końcu tekstu
+print(tekst.removesuffix("Świecie").strip())  # "Witaj"
