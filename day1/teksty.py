@@ -32,3 +32,9 @@ print(tekst.removesuffix("Świecie"))  # "Witaj "
 
 # strip() - usunięcie białych znaków, spacji, na początku i końcu tekstu
 print(tekst.removesuffix("Świecie").strip())  # "Witaj"
+
+encode_s = tekst.encode('utf-8')
+print(encode_s)  # b'Witaj \xc5\x9awiecie' dane typu bajtowego
+# \xc5\x9a zapis w sytemie szesnastkowym literki "Ś"
+print(type(encode_s))  # <class 'bytes'>
+print(encode_s.decode("utf-8"))  # Witaj Świecie
