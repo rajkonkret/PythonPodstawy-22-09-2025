@@ -38,3 +38,32 @@ print(encode_s)  # b'Witaj \xc5\x9awiecie' dane typu bajtowego
 # \xc5\x9a zapis w sytemie szesnastkowym literki "Ś"
 print(type(encode_s))  # <class 'bytes'>
 print(encode_s.decode("utf-8"))  # Witaj Świecie
+
+imie = "Radek"
+# f - string format, tekst sformatowany
+tekst_format = f"Mam na imię {imie} i lubię pythona."
+print(tekst_format)  # Mam na imię Radek i lubię pythona. ->  Mam na imię {imie} i lubię pythona.
+
+tekst_format = f"\tMam na imię {imie}\n i lubię pythona.\b"
+print(tekst_format)
+# "	 Mam na imię Radek
+#  i lubię pythona"
+# \t - tab
+# \n - nowa linia
+# \b - backspace
+
+starszy = 'Witaj %s!'  # %s - oczekuje stringa
+print(starszy % imie)  # Witaj Radek! W miejsce %s wstrzyknęło "Radek"
+
+print('Witaj {}'.format('Radek'))  # Witaj Radek
+
+print('Witaj', imie)  # Witaj Radek
+
+print("""Tekst
+    wilolinijkowy""")
+# "Tekst
+#     wilolinijkowy"
+
+# komentarz wielolinijkowy jest traktowany jako dokumentacja
+"""Komentarz
+    wielolinijkowy"""
