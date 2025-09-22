@@ -51,3 +51,6 @@ print(39 + int("39")) # 78
 
 print(5 * "4") # 44444
 print(5 * 4) # 20
+
+# print(int("A")) # ValueError: invalid literal for int() with base 10: 'A'
+print(int(168) + int("35")) # 203
