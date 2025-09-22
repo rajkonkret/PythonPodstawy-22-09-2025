@@ -103,7 +103,7 @@ print("Radek ma lat")
 
 a = 6
 b = 8
-print(f'Porównanie {a} > {b} = {a > b}')
+print(f'Porównanie {a} > {b} = {a > b}')  # # Porównanie 6 > 8 = False
 print(f'Porównanie {a} < {b} = {a < b}')
 print(f'Porównanie {a} <= {b} = {a <= b}')
 print(f'Porównanie {a} >= {b} = {a >= b}')
@@ -115,3 +115,4 @@ print(f'Porównanie {a} !=  {b} = {a != b}')  # różne
 # Porównanie 6 >= 8 = False
 # Porównanie 6 == 8 = False
 # Porównanie 6 !=  8 = True
+print(f"Porównanie {a > b = }")  # Porównanie a > b = False
