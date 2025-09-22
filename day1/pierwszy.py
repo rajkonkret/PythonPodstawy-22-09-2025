@@ -48,3 +48,6 @@ print(sys.int_info)
 # musimy rzutowac typy, jeśli mamy typy mieszane
 print(int("39")) # rzutowanie, zamian ana int
 print(39 + int("39")) # 78
+
+print(5 * "4") # 44444
+print(5 * 4) # 20
