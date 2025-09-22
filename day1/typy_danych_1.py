@@ -1,4 +1,5 @@
 import sys
+from xmlrpc.client import FastParser
 
 wiek = 47  # int
 rok = 2025  # int
@@ -71,3 +72,10 @@ print(bool("Radek"))  # True
 print(bool(""))  # False
 print(bool(0))  # False
 print(bool(None))  # False, odpowiednik null, stan nieokreślony, nie wiem, nie ma
+
+# operacje logiczne
+# and - i
+print(True and True)  ##           True
+print(True and False)  ##          False
+print(False and True)  ##          False
+print(False and False)  ##         False
