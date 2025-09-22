@@ -101,4 +101,17 @@ print("Radek ma lat")
 print("Radek ma lat")
 print("Radek ma lat")
 
-
+a = 6
+b = 8
+print(f'Porównanie {a} > {b} = {a > b}')
+print(f'Porównanie {a} < {b} = {a < b}')
+print(f'Porównanie {a} <= {b} = {a <= b}')
+print(f'Porównanie {a} >= {b} = {a >= b}')
+print(f'Porównanie {a} == {b} = {a == b}')  # porównanie ==
+print(f'Porównanie {a} !=  {b} = {a != b}')  # różne
+# Porównanie 6 > 8 = False
+# Porównanie 6 < 8 = True
+# Porównanie 6 <= 8 = True
+# Porównanie 6 >= 8 = False
+# Porównanie 6 == 8 = False
+# Porównanie 6 !=  8 = True
