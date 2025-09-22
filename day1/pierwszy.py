@@ -70,4 +70,26 @@ print(name + "Kowalski")  # RadekKowalski
 # print(name + 90)  # TypeError: can only concatenate str (not "int") to str
 name = 90
 print(name)
-print(type(name)) # <class 'int'>
+print(type(name))  # <class 'int'>
+
+# podpowiedzi typów
+name: str = "Radek"
+print(name)
+print(type(name))
+
+name = 90
+print(name)
+# Process finished with exit code 0
+
+age = 90
+print(age)  # 90
+#  pip install mypy
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonPodstawy-22-09-2025> cd day1
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonPodstawy-22-09-2025\day1> mypy .\pierwszy.py
+# pierwszy.py:71: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+# pierwszy.py:76: error: Name "name" already defined on line 64  [no-redef]
+# pierwszy.py:80: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+# Found 3 errors in 1 file (checked 1 source file)
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonPodstawy-22-09-2025\day1>
+# pip - instalator pakietów pythona
+# mypy - skrypt do sprawdzania poprawności typów danych
