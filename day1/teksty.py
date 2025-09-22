@@ -40,6 +40,7 @@ print(type(encode_s))  # <class 'bytes'>
 print(encode_s.decode("utf-8"))  # Witaj Świecie
 
 imie = "Radek"
+print(len("Radek"))  # 5, długość tekstu
 # f - string format, tekst sformatowany
 tekst_format = f"Mam na imię {imie} i lubię pythona."
 print(tekst_format)  # Mam na imię Radek i lubię pythona. ->  Mam na imię {imie} i lubię pythona.
