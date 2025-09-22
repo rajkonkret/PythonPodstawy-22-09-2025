@@ -25,4 +25,4 @@ print(tekst[2])  # t
 print(tekst.index("Ś"))  # 6
 
 print(tekst.count("i"))  # występuje 3 razy
-print(tekst.count("j",0,4))# 0, z prawej zbiór otwarty, indeksy 0123
+print(tekst.count("j", 0, 4))  # 0, z prawej zbiór otwarty, indeksy 0123
