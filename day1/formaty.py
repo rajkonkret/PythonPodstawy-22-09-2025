@@ -38,4 +38,22 @@ print(f"{z=}")  # z=3.88, z pozostaje <class 'float'>
 print(type(z))  # <class 'float'>
 # ctrl alt l - formatowanie wg PEP8
 
+print(f'Używamy wersji pythona {wersja}')  # Używamy wersji pythona 3.900001
+print(f'Używamy wersji pythona {wersja:.2f}')  # Używamy wersji pythona 3.90
+print(f'Używamy wersji pythona {wersja:.1f}')  # Używamy wersji pythona 3.9
+print(f'Używamy wersji pythona {wersja:.0f}')  # Używamy wersji pythona 4
 
+print(f'{user:<10}')  # "Tomek     "
+print(f"{user:>15}")  # "          Tomek"
+print(f'{user:^20}')  # "       Tomek        "
+
+liczba = 678654345321
+print(liczba)  # 678654345321
+print(f'Nasza duża liczba: {liczba:,}')  # Nasza duża liczba: 678,654,345,321
+print(f'Nasza duża liczba: {liczba:_}')  # Nasza duża liczba: 678_654_345_321
+print(f'Nasza duża liczba: {liczba:_}'.replace("_", " "))  # Nasza duża liczba: 678 654 345 321
+print(f'Nasza duża liczba: {liczba:_}'.replace("_", "."))  # Nasza duża liczba: 678.654.345.321
+
+liczba = 150_000_000
+print(liczba)  # 150000000
+print(type(liczba))  # <class 'int'>
