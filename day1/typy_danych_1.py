@@ -89,3 +89,14 @@ print(False or False)  ##         False
 # not - negaacja
 print(not True)  # False
 print(not False)  # True
+
+# napisz cos
+print(not True)
+print(not False)
+print(not False)
+print(not False)
+print(not False)
+print("Radek ma lat")
+
+print("Radek ma lat")
+print("Radek ma lat")
