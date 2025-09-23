@@ -46,3 +46,26 @@ print(tupla_imiona.index("Radek"))  # index numer 2
 print(tupla_imiona.count("Radek"))  # występuje 1 raz
 
 print(len(tupla_imiona))  # długość 4
+
+# rozpakowanie kroktki
+tup = 1, 2
+print(type(tup))  # <class 'tuple'>
+
+a, b = 1, 2
+print(a, b)  # 1 2
+a, b = b, a  # zamiana miejscami
+print(a, b)  # 2 1
+
+a, b = tup
+print(a, b)  # 1 2
+
+print(tupla_imiona)  # ('Zenek', 'Marek', 'Radek', 'Ania')
+# * worek na pozostałe dane
+name1, name2, *name3 = tupla_imiona
+print(name1, name2, name3)  # Zenek Marek ['Radek', 'Ania']
+
+name1, *name2, name3 = tupla_imiona
+print(name1, name2, name3)  # Zenek ['Marek', 'Radek'] Ania
+
+*name1, name2, name3 = tupla_imiona
+print(name1, name2, name3)  # ['Zenek', 'Marek'] Radek Ania
