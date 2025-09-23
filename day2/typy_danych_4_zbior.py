@@ -43,3 +43,33 @@ print(id(zbior_copy))
 # 1721301683104
 # 1721306862016
 
+zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
+print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
+
+# suma zbiorów - tworzy nowy zbior
+print(zbior | zbior_2)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62}
+print(zbior.union(zbior_2))  # {777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62}
+
+# część wspólna - tworzy nowy zbior
+print(zbior & zbior_2)  # {18, 11, 44}
+print(zbior.intersection(zbior_2))  # {18, 11, 44}
+
+# różnica zbiorów
+print(zbior - zbior_2)  # {24, 777, 22}
+print(zbior.difference(zbior_2))  # {24, 777, 22}
+print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
+
+# łączy zbiory, zmienia bazowy !!!
+zbior.update(zbior_2)
+print(zbior)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62}
+
+krotka = tuple(zbior)
+print(krotka)  # (777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62)
+
+lista = list(zbior)
+print(lista)  # [777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62]
+
+# sprawdzenie czy element znajduje się w danej kolekcji
+print(667 in zbior)  # True
+print(667 in krotka)  # True
+print(767 in lista)  # False
