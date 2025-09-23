@@ -6,7 +6,7 @@
 
 odp = True
 print(bool(True))  # True
-odp= False
+odp = False
 # debugger, pułąpka
 if odp:
     # blok programu wykonywany gdy warunek True
@@ -19,3 +19,21 @@ if odp:
 print('Dalsza częśc programu niezależna od warunku')
 # True
 # Dalsza częśc programu niezależna od warunku
+
+odp = "Radek"
+print(bool(odp))  # True
+
+if odp:
+    print('Dane zostały wczytane')
+    # Dane zostały wczytane
+
+if odp == "Radek":  # porównanie
+    print("Jesteś Radek")
+# Jesteś Radek
+
+odp = 0
+if odp:
+    print("Działa")
+else:  # w przeciwnym wypadku
+    print("Zero -> False")
+# Zero -> False
