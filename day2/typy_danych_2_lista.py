@@ -101,3 +101,23 @@ print(lista.pop())  # Agata, usunie ostatni element
 
 # sprawdzenie indexu dla danego elementu
 print(lista.index("Anita"))  # indeks 3, pierwszy napotkany
+
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
+
+lista_2 = lista  # kopia adresu listy, kopia referencji
+print(lista)  # ['Radek', 'Ola', 'Adam', 'Anita']
+print(lista_2)  # ['Radek', 'Ola', 'Adam', 'Anita']
+lista_copy = lista.copy()  # kopia elementow listy
+lista.clear()  # czyszczenie elementów listy
+print(lista)  # []
+print(lista_2)  # []
+print(lista_copy)  # ['Radek', 'Ola', 'Adam', 'Anita']
+# id() - pokazuje miejsce w pamięci
+print(id(lista))  # 2481663485056
+print(id(lista_2))  # 2481663485056
+print(id(lista_copy))  # 2481697537792
