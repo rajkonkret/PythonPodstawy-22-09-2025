@@ -112,6 +112,7 @@ print(f"{a=}, {b=}")  # a=3, b=9
 lista_2 = lista  # kopia adresu listy, kopia referencji
 print(lista)  # ['Radek', 'Ola', 'Adam', 'Anita']
 print(lista_2)  # ['Radek', 'Ola', 'Adam', 'Anita']
+
 lista_copy = lista.copy()  # kopia elementow listy
 lista.clear()  # czyszczenie elementów listy
 print(lista)  # []
@@ -121,3 +122,11 @@ print(lista_copy)  # ['Radek', 'Ola', 'Adam', 'Anita']
 print(id(lista))  # 2481663485056
 print(id(lista_2))  # 2481663485056
 print(id(lista_copy))  # 2481697537792
+
+liczby = [54, 999, 34, 12.34, 567, 999]
+print(liczby)  # [54, 999, 34, 12.34, 567, 999]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()  # posortował oryginalną listę
+print(liczby)  # [12.34, 34, 54, 567, 999, 999]
+
