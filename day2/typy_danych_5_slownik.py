@@ -51,3 +51,19 @@ print(dictionary)  # {'imie': 'Tomek', 'wiek': 45, 'date': '12-12-2050'}
 dict_small = {'x': 2}
 dict_small.update([("y", 3), ("z", 8)])
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 8}
+
+# # input() - pozwala wprowadzac dane np.: z kalwiatury
+# tekst = input("Podaj imię:")
+# print(tekst)
+# # Podaj imię:Radek
+# # Radek
+
+# napisać aplikację kalkulator
+a = int(input("Podaj pierwszą liczbę:"))
+b = float(input("Podaj drugą liczbę:"))
+print(a + b)
+print(int(a) + float(b))
+# Podaj pierwszą liczbę:56
+# Podaj drugą liczbę:212
+# 268.0
+# 268.0
