@@ -34,3 +34,12 @@ print(zbior.pop())  # 33
 print(zbior)  # {66, 777, 11, 44, 18, 22, 24}
 zmienna = zbior.pop()
 print("Zmienna:", zmienna)  # Zmienna: 66
+
+zbior_copy = zbior.copy()  # kopia elementów zbioru
+print(zbior)
+print(zbior_copy)
+print(id(zbior))
+print(id(zbior_copy))
+# 1721301683104
+# 1721306862016
+
