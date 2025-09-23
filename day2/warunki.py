@@ -108,3 +108,49 @@ print("Lista błędów:", lista_b)
 # Lista błędów: []
 # System email
 # Lista błędów: ['Krytyczny']
+
+# napisać test z....
+# dodac punktację
+# 3 pytanie
+
+
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+
+punkty = 0
+odp = input("Podaj rok Chrztu Polski")
+if odp.strip().casefold() == '966':
+    print("Prawidłowa odpowiedź")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Błędna odpowiedź")
+print("Zdobyte punkty:", punkty)
+
+odp = input("Co jest zielone")
+if odp.strip().casefold() in ("trawa", 'liscie', 'samochod'):
+    print("Odpowiedź prawidłowa")
+    punkty += 1
+else:
+    print("Błędna odpowiedź")
+print("Zdobyte punkty:", punkty)
+
+odp = input("Czy Ala ma kota")
+if odp.strip().casefold() == "tak":
+    print("Odpowiedź prawidłowa")
+    punkty += 1
+else:
+    print("Błędna odpowiedź")
+print("Zdobyte punkty:", punkty)
+# Podaj rok Chrztu Polski966
+# Prawidłowa odpowiedź
+# Zdobyte punkty: 1
+# Co jest zielonetrawa
+# Odpowiedź prawidłowa
+# Zdobyte punkty: 2
+# Czy Ala ma kotatak
+# Odpowiedź prawidłowa
+# Zdobyte punkty: 3
