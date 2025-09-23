@@ -72,3 +72,32 @@ print(list(range(0, 15, 2)))  # [0, 2, 4, 6, 8, 10, 12, 14], generowany co drugi
 
 # wyświetli listę w odwrotnej kolejności - idzie od końca
 print(lista[::-1])  # ['Agata', 'Anita', 'Adam', 'Kamil', 'Zenek', 'Tomek', 'Radek']
+
+# nadpisanie elementu w liście na wskazanym indeksie
+# zmiana w oryginalnej liście
+lista[3] = "Asia"
+print(lista)  # ['Radek', 'Tomek', 'Zenek', 'Asia', 'Adam', 'Anita', 'Agata']
+
+# wstawienie elementu na wskazanym indeksie
+lista.insert(1, "Ola")
+print(lista)
+# ['Radek', 'Ola', 'Tomek', 'Zenek', 'Asia', 'Adam', 'Anita', 'Agata']
+
+# usunięcie elemntu z listy, po elemencie, pierwszy napotkany
+lista.remove("Tomek")
+print(lista)  # ['Radek', 'Ola', 'Zenek', 'Asia', 'Adam', 'Anita', 'Agata']
+lista.append("Zenek")
+print(lista)
+lista.remove("Zenek")
+print(lista)  # ['Radek', 'Ola', 'Asia', 'Adam', 'Anita', 'Agata', 'Zenek']
+
+# usunięcie po indeksie
+# pop() - zwraca usunięty element
+print(lista.pop(2))  # Asia, wypisze usunięty element
+zmienna = lista.pop(-1)
+print("Zmienna:", zmienna)  # Zmienna: Zenek
+print(lista)  # ['Radek', 'Ola', 'Adam', 'Anita', 'Agata']
+print(lista.pop())  # Agata, usunie ostatni element
+
+# sprawdzenie indexu dla danego elementu
+print(lista.index("Anita"))  # indeks 3, pierwszy napotkany
