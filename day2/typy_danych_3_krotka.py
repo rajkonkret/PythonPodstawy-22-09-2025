@@ -69,3 +69,8 @@ print(name1, name2, name3)  # Zenek ['Marek', 'Radek'] Ania
 
 *name1, name2, name3 = tupla_imiona
 print(name1, name2, name3)  # ['Zenek', 'Marek'] Radek Ania
+
+# sortowanie krotki zwraca nową listę
+print(sorted(tupla_imiona))  # ['Ania', 'Marek', 'Radek', 'Zenek']
+# tulpa_imiona nie zostałą zmieniona
+print(tupla_imiona)  # ('Zenek', 'Marek', 'Radek', 'Ania')
