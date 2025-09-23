@@ -146,3 +146,25 @@ print(lista_copy)  # ['Radek', 'Ola', 'Anita', 'Adam']
 lista_copy.reverse()  # odwraca bez sortowania
 print(lista_copy)  # ['Adam', 'Anita', 'Ola', 'Radek']
 
+liczby[3] = 666
+print(liczby[0:3])
+print(liczby[-3])
+print(liczby)
+# [54, 999, 34]
+# 567
+# [54, 999, 34, 666, 567, 999, 'A']
+
+# rozpakowanie sekwencji
+tekst = "Pyth on."
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
+
+# tworzymy krotkę z listy
+krotka = tuple(lista_copy)
+print(type(krotka))
+print(krotka)
+# <class 'tuple'>
+# ('Adam', 'Anita', 'Ola', 'Radek')
