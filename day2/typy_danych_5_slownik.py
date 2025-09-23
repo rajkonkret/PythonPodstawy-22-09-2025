@@ -58,12 +58,27 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 8}
 # # Podaj imię:Radek
 # # Radek
 
-# napisać aplikację kalkulator
-a = int(input("Podaj pierwszą liczbę:"))
-b = float(input("Podaj drugą liczbę:"))
-print(a + b)
-print(int(a) + float(b))
-# Podaj pierwszą liczbę:56
+# # napisać aplikację kalkulator
+# a = int(input("Podaj pierwszą liczbę:"))
+# b = float(input("Podaj drugą liczbę:"))
+# print(a + b)
+# print(int(a) + float(b))
+# # Podaj pierwszą liczbę:56
 # Podaj drugą liczbę:212
 # 268.0
 # 268.0
+
+# napisać aplikację słownik pol-ang
+# zestawnych danych -> słownik
+# wyswietlic klucze
+# przyjąc słowko od użytkownika - input()
+# wyświetlić tłumaczenie
+pol_ang = {'pies': 'dog', "kot": "cat", "dach": "roof"}
+print("Znam takie słówka:", pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia:")
+# print(pol_ang[odp])
+# print(pol_ang.get(odp.strip().casefold(), "Nie ma w słowniku"))
+print(f"Prawidłowa odpowiedz dla: {odp} to: {pol_ang.get(odp.strip().casefold(), "Nie ma w słowniku")}")
+# Znam takie słówka: dict_keys(['pies', 'kot', 'dach'])
+# Podaj słówko do przetłumaczenia:kot
+# Prawidłowa odpowiedz dla: kot to: cat
