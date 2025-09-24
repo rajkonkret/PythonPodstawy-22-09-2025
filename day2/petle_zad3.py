@@ -58,3 +58,13 @@ while licznik < 10:
 # podaj liczbę:a
 # ['1', '2', '3', '4', '5']
 # [1, 2, 3, 4, 5]
+
+my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
+while 5 in my_list:
+    my_list.remove(5)
+print(my_list)  # [1, 2, 3, 4, 6] usunęła wszystkie 5 i nie zmieniła kolejności
+
+my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
+print(dict.fromkeys(my_list))  # {1: None, 5: None, 2: None, 3: None, 4: None, 6: None}
+print(list(dict.fromkeys(my_list)))
+# [1, 5, 2, 3, 4, 6]
