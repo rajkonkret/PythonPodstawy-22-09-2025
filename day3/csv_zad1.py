@@ -27,3 +27,23 @@ with open(filename, "w", newline="") as f:
     csvwriter = csv.DictWriter(f, fieldnames=fields)
     csvwriter.writeheader()  # nazwy kolumn
     csvwriter.writerow(dict_name)
+
+products = [
+    {"sku": 1, "exp_date": 'today', "price": 200},
+    {"sku": 2, "exp_date": 'today', "price": 100},
+    {"sku": 3, "exp_date": 'today', "price": 250},
+    {"sku": 4, "exp_date": 'tomorrow', "price": 99},
+    {"sku": 5, "exp_date": 'today', "price": 50.50},
+    {"sku": 6, "exp_date": 'tomorrow', "price": 9.99},
+]
+
+print(products[0])  # {'sku': 1, 'exp_date': 'today', 'price': 200}
+list_product = [key for key in products[0]]
+print(list_product)  # ['sku', 'exp_date', 'price']
+
+# delimiter=";" - wskazanie delimitera
+filename = "records_discount.csv"
+with open(filename, "w", newline="") as f:
+    csvwriter = csv.DictWriter(f, fieldnames=list_product, delimiter=";")
+    csvwriter.writeheader()
+    csvwriter.writerows(products)  # writerows - zapis listy słowników
