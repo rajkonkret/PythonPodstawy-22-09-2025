@@ -34,7 +34,7 @@ with open('test.log', 'a', encoding="utf-8") as file:
     file.write("Dopisane\n")
     file.write("Dopisane\n")
     file.write("Dopisane\n")
-    file.write("Dośpisane\n")
+    file.write("Dośąźpisane\n")
 
 with open('test.log', "r", encoding="utf-8") as f:
     lines = f.read()
