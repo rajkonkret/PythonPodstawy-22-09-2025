@@ -15,6 +15,8 @@
 #     '+'       open a disk file for updating (reading and writing)
 #     ========= ===============================================================
 # context manager zamyka plik za nas
+
+# shift enter - plik w nowym oknie
 with open('test.log', "w", encoding="utf-8") as fh:  # filehandler
     fh.write("Powitanie\n")
     fh.write("Kolejne\n")
