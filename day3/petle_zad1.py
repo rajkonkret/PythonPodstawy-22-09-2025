@@ -104,4 +104,51 @@ print("Po zakończeniu pętli")
 # Wykona dla każdego przejscia pętli
 # Po zakończeniu pętli
 
-imiona =
+imiona = ["Radek", "Tomek", "Agata", "Marek"]
+print(imiona)  # ['Radek', 'Tomek', 'Agata', 'Marek']
+print(type(imiona))  # <class 'list'>
+
+# wypisac jedno pod drugim elementy z listy
+for p in imiona:
+    print(p)
+# Radek
+# Tomek
+# Agata
+# Marek
+
+# 0 Radek
+for i in range(len(imiona)):
+    print(i, imiona[i])
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+for p in imiona:
+    print(imiona.index(p), p)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+# enumerate() - numeruje i zwraca numer i element kolekcji
+for p in enumerate(imiona):
+    print(p)
+# (0, 'Radek')
+# (1, 'Tomek')
+# (2, 'Agata')
+# (3, 'Marek')
+
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+for i, o in enumerate(imiona, start=1):
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Agata
+# 4 Marek
