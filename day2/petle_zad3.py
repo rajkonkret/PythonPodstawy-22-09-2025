@@ -19,14 +19,42 @@ while licznik < 10:
     licznik += 1
     print("Komunikat3 !!!")
 
-password = input("Podaj hasło")
-while password != "secret":  # != różne
-    password = input("Podaj ponownie")
-
-print("Hasło prawidłowe")
+# password = input("Podaj hasło")
+# while password != "secret":  # != różne
+#     password = input("Podaj ponownie")
+#
+# print("Hasło prawidłowe")
 # Podaj hasło234ewedd
 # Podaj ponownieewrewrwe
 # Podaj ponowniewerwerwe
 # Podaj ponowniesdfsdfsd
 # Podaj ponowniesecret
 # Hasło prawidłowe
+
+# lista = []
+# lista_int = []
+# while True:
+#     wej = input("podaj liczbę:")  # -> str
+#     # A string is numeric if all characters in the string are numeric
+#     if not wej.isnumeric():
+#         break
+#     lista.append(wej)
+#     lista_int.append(int(wej))  # rzutujemy na inta
+#
+# print(lista)
+# print(lista_int)
+# podaj liczbę:1
+# podaj liczbę:2
+# podaj liczbę:3
+# podaj liczbę:4
+# podaj liczbę:5
+# podaj liczbę:a
+# ['1', '2', '3', '4', '5']
+# podaj liczbę:1
+# podaj liczbę:2
+# podaj liczbę:3
+# podaj liczbę:4
+# podaj liczbę:5
+# podaj liczbę:a
+# ['1', '2', '3', '4', '5']
+# [1, 2, 3, 4, 5]
