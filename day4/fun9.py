@@ -28,6 +28,7 @@ print(wiek(17))  # nastolatek
 print(wiek(18))  # dorosły
 print(wiek(25))  # dorosły
 
+# mapowanie danych
 lista = [1, 2, 14, 24, 50, 67, 80, 100, 200, 500]
 l1 = []
 for i in lista:
@@ -38,7 +39,7 @@ print([i * 2 for i in lista])  # [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
 
 
 def zmien(x):
-    return i * 2
+    return x * 2
 
 
 l2 = []
@@ -51,3 +52,24 @@ l3 = []
 for i in lista:
     l3.append(zmien2(i))
 print(l3)  # [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+print(lista)  # [1, 2, 14, 24, 50, 67, 80, 100, 200, 500]
+# map() wykonuje funkcje na wszystkich elementach kolekcji
+# funkcja wyższego rzędu, jako argument przyjmuje inną funkcję
+
+print(f"Zastosowanie map(): {list(map(zmien, lista))}")
+# Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+# Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+print(f"Zastosowanie map(): {list(map(zmien2, lista))}")
+# Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+# lambda jako funkcja anonimowa
+# bez nazwy, wykonanie w miejscu deklaracji
+print(f"Zastosowanie map(): {list(map(lambda x: x * 2, lista))}")
+# Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+print(f"Zastosowanie map(): {list(map(lambda x: x * 4, lista))}")
+print(f"Zastosowanie map(): {list(map(lambda x: x * 8, lista))}")
+print(f"Zastosowanie map(): {list(map(lambda x: x * 2.5, lista))}")
+# Zastosowanie map(): [4, 8, 56, 96, 200, 268, 320, 400, 800, 2000]
+# Zastosowanie map(): [8, 16, 112, 192, 400, 536, 640, 800, 1600, 4000]
+# Zastosowanie map(): [2.5, 5.0, 35.0, 60.0, 125.0, 167.5, 200.0, 250.0, 500.0, 1250.0]
+
