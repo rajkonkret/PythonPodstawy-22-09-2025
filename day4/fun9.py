@@ -73,3 +73,24 @@ print(f"Zastosowanie map(): {list(map(lambda x: x * 2.5, lista))}")
 # Zastosowanie map(): [8, 16, 112, 192, 400, 536, 640, 800, 1600, 4000]
 # Zastosowanie map(): [2.5, 5.0, 35.0, 60.0, 125.0, 167.5, 200.0, 250.0, 500.0, 1250.0]
 
+# filtrowanie danych
+l4 = []
+for i in lista:
+    if i < 3:
+        l4.append(i)
+print(l4)  # [1, 2]
+
+# filter() - zwraca elelemnty spełniające warunek zadany funkcją
+print(f"Zastosowanie filter(): {list(filter(lambda x: x < 3, lista))}")
+# Zastosowanie filter(): [1, 2]
+print(f"Zastosowanie filter(): {list(filter(lambda x: x < 50, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 50, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 150, lista))}")
+# Zastosowanie filter(): [1, 2, 14, 24]
+# Zastosowanie filter(): [67, 80, 100, 200, 500]
+# Zastosowanie filter(): [200, 500]
+# x > 3 i x < 250
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 3 and x < 250, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: 3 < x < 250, lista))}")
+# Zastosowanie filter(): [14, 24, 50, 67, 80, 100, 200]
+# Zastosowanie filter(): [14, 24, 50, 67, 80, 100, 200]
