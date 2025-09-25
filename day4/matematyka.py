@@ -19,3 +19,6 @@ for a, s in zip(angles, sin_values):
 # sin(45) = 0.71
 # sin(60) = 0.87
 # sin(90) = 1.00
+
+imiona = ["Radek", "Tomek", "Agata", "Marek", "Anna"]
+wiek = [44, 56, 23, 34]
