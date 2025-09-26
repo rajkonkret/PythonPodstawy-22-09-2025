@@ -124,3 +124,5 @@ https://pl.altapps.net/soft/hackerrank-com
 https://pl.altapps.net/soft/hackerrank-com?page=1
 https://naukajava.online/
 https://naukapythona.com.pl/?
+
+https://github.com/public-apis/public-apis
