@@ -8,6 +8,17 @@
 # PUT: Zaktualizowanie istniejącego zasobu.
 # DELETE: Usunięcie zasobu
 # https://api.chucknorris.io/
+import requests
 
+#  pip install requests
+url = "https://api.chucknorris.io/jokes/random"
 
-url = "https://api.chucknorris.io/"
+response = requests.get(url)
+print(response)  # <Response [200]>
+
+# 2xx - ok
+# 3xx - warningi, przekierwoania
+# 4xx - 404 - brak strony, 400 bad Request - błedne wywołnie
+# 5xx - błędy po stronie serwera, 500 Internal Server Error
+
+print(response.text)
