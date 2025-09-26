@@ -14,3 +14,17 @@ if base_path.exists() and base_path.is_dir():
 
 # tworzenie katalogu
 base_path.mkdir()
+
+path_b = base_path / 'A' / "B"
+path_c = base_path / 'A' / "C"
+path_d = base_path / 'A' / "D"
+
+# FileNotFoundError: [WinError 3] System nie może odnaleźć określonej ścieżki: 'ops_example\\A\\B'
+# Brak katalogu A, powoduje, że nie można utworzyć w nim katalogu B
+# path_b.mkdir()
+
+# musimy jawnie powiedzieć, że ma stworzyć drzewo katalogów
+path_b.mkdir(parents=True)
+
+# katalog C stworzy, bo istnieje już A
+path_c.mkdir()
