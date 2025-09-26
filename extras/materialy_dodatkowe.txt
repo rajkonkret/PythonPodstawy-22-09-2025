@@ -127,3 +127,7 @@ https://naukapythona.com.pl/?
 
 https://github.com/public-apis/public-apis
 https://sqlitebrowser.org/dl/
+
+pip list
+pip freeze > requirements.txt
+pip install -r .\requirements.txt
