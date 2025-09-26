@@ -45,3 +45,13 @@ ex1.rename(ex1.parent / "ex1renamed.log")
 ex1 = path_d / 'ex1renamed.log'
 docelowy = path_c
 shutil.copy(ex1, docelowy)
+
+# sciezki w pythonie
+ex1 = path_d / 'ex1renamed.log'
+print(ex1.resolve())
+# C:\Users\CSComarch\PycharmProjects\PythonPodstawy-22-09-2025\day5\ops_example\A\D\ex1renamed.log - nieprawidłowa ścieżka
+filename = "C:\\Users\\CSComarch\\PycharmProjects\\PythonPodstawy-22-09-2025\\day5\\ops_example\\A\\D\\ex1renamed.log"
+# r - raw
+# traktuje jako czysty tekst
+filename = r"C:\Users\CSComarch\PycharmProjects\PythonPodstawy-22-09-2025\day5\ops_example\A\D\ex1renamed.log"
+print(filename)
