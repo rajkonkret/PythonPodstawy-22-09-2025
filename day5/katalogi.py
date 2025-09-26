@@ -28,3 +28,8 @@ path_b.mkdir(parents=True)
 
 # katalog C stworzy, bo istnieje już A
 path_c.mkdir()
+
+# tworzenie plików
+for filename in ('ex1.txt', 'ex2.txt', 'ex3.txt'):
+    with open(path_b / filename, "w", encoding="utf-8") as stream:
+        stream.write(f"Jakaś treść w pliku {filename}")
