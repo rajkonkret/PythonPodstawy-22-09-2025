@@ -22,3 +22,25 @@ print(response)  # <Response [200]>
 # 5xx - błędy po stronie serwera, 500 Internal Server Error
 
 print(response.text)
+
+# json zamieniamy na słownik
+data = response.json()
+print(type(data))  # <class 'dict'>
+
+for k in data:
+    print(k)
+# categories
+# created_at
+# icon_url
+# id
+# updated_at
+# url
+# value
+print(data['value'])
+# Chuck Norris can put on his shoes and tie them with his toes
+
+response_img = requests.get(data['icon_url'])
+with open('icon.png', "wb") as f:
+    f.write(response_img.content)
+
+print("Zdjęcie zostało zapisane")
